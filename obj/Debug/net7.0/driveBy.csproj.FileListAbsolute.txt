@@ -1,0 +1,15 @@
+C:\src\driveBy\bin\Debug\net7.0\driveBy.exe
+C:\src\driveBy\bin\Debug\net7.0\driveBy.deps.json
+C:\src\driveBy\bin\Debug\net7.0\driveBy.runtimeconfig.json
+C:\src\driveBy\bin\Debug\net7.0\driveBy.dll
+C:\src\driveBy\bin\Debug\net7.0\driveBy.pdb
+C:\src\driveBy\obj\Debug\net7.0\driveBy.csproj.AssemblyReference.cache
+C:\src\driveBy\obj\Debug\net7.0\driveBy.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\driveBy\obj\Debug\net7.0\driveBy.AssemblyInfoInputs.cache
+C:\src\driveBy\obj\Debug\net7.0\driveBy.AssemblyInfo.cs
+C:\src\driveBy\obj\Debug\net7.0\driveBy.csproj.CoreCompileInputs.cache
+C:\src\driveBy\obj\Debug\net7.0\driveBy.dll
+C:\src\driveBy\obj\Debug\net7.0\refint\driveBy.dll
+C:\src\driveBy\obj\Debug\net7.0\driveBy.pdb
+C:\src\driveBy\obj\Debug\net7.0\driveBy.genruntimeconfig.cache
+C:\src\driveBy\obj\Debug\net7.0\ref\driveBy.dll

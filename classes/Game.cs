@@ -5,12 +5,16 @@ public class Game {
   public void main() {
 
     Console.WriteLine("Welcome to DriveBy!");
+    Console.WriteLine("Press Y to Start Playing.");
 
-    Task.Run( () => updateAndDrawTheGame() );
+    if (Console.ReadKey().Key == ConsoleKey.Y){
+      Task.Run( () => updateAndDrawTheGame() );
 
-    do {
-      Pressed_Key = Console.ReadKey();
-    } while (Pressed_Key.Key != ConsoleKey.Escape);
+      do {
+        Pressed_Key = Console.ReadKey();
+      } while (Pressed_Key.Key != ConsoleKey.Escape);
+    }
+
   }
 
   public static void updateAndDrawTheGame() {

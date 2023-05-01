@@ -8,11 +8,11 @@ public class Game {
     Console.WriteLine("Press Y to Start Playing.");
 
     if (Console.ReadKey().Key == ConsoleKey.Y){
+      Console.Clear();
       Task.Run( () => updateAndDrawTheGame() );
 
       do {
         Pressed_Key = Console.ReadKey();
-        Console.WriteLine("DOOOOO");
       } while (Pressed_Key.Key != ConsoleKey.Escape);
     }
 
@@ -21,7 +21,7 @@ public class Game {
   public static void updateAndDrawTheGame() {
     while (Pressed_Key == null); //wait for first key press
 
-    char[] row = {'-','-','^','-','-'};
+    char[] row = {'-','-','-','-','-','^','-','-','-','-','-'};
 
     while (Pressed_Key.Key != ConsoleKey.Escape) {
       // Update the enemies, scenery, HUD etc.
@@ -29,8 +29,7 @@ public class Game {
       // Move the character differently if THE_PRESSED_KEY is 'S'
       // etc.
 
-      while(Console.KeyAvailable) Console.ReadKey(true);
-
+      // while(Console.KeyAvailable) Console.ReadKey(true);
       if (Pressed_Key.Key == ConsoleKey.A) {
         if (row[0] != '^') {
           for (var i = 0; i < row.Length; i++) {
@@ -40,7 +39,7 @@ public class Game {
                   break;
               }
           }
-        } 
+        }
         // move left
       }
 
@@ -63,9 +62,10 @@ public class Game {
         // move back
       }
 
+      Pressed_Key = default(ConsoleKeyInfo);
       Console.WriteLine(row);
+      Thread.Sleep(500);
       // Redraw the game with the updates
     }
-
   }
 }

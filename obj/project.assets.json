@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dthon\\.nuget\\packages\\": {}
+    "C:\\Users\\Patrick\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\src\\driveBy\\driveBy.csproj",
+      "projectUniqueName": "E:\\src\\driveBy\\driveBy.csproj",
       "projectName": "driveBy",
-      "projectPath": "C:\\src\\driveBy\\driveBy.csproj",
-      "packagesPath": "C:\\Users\\dthon\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\driveBy\\obj\\",
+      "projectPath": "E:\\src\\driveBy\\driveBy.csproj",
+      "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
+      "outputPath": "E:\\src\\driveBy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dthon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

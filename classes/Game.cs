@@ -1,7 +1,10 @@
 namespace Classes;
+// using System.Windows.Forms;
 
 public class Game {
   static ConsoleKeyInfo Pressed_Key;
+  // ConsoleKey key = Console.ReadKey(true).Key;
+  // static ConsoleKey Pressed_Key;
   public void main() {
 
     Console.WriteLine("Welcome to DriveBy!");
@@ -9,10 +12,43 @@ public class Game {
 
     if (Console.ReadKey().Key == ConsoleKey.Y){
       Console.Clear();
-      Task.Run( () => updateAndDrawTheGame() );
+      // Task.Run( () => updateAndDrawTheGame() );
+
+      char[] row = {'-','-','-','-','-','^','-','-','-','-','-'};
 
       do {
-        Pressed_Key = Console.ReadKey();
+        // Pressed_Key = Console.ReadKey();
+
+        if (Console.ReadKey(true).Key == ConsoleKey.A) {
+          // move left
+          if (row[0] != '^') {
+            for (var i = 0; i < row.Length; i++) {
+                if (row[i] == '^') {
+                    row[i - 1] = '^';
+                    row[i] = '-';
+                    break;
+                }
+            }
+          }
+        }
+
+        // if (Console.ReadKey(true).Key == ConsoleKey.D) {
+        //   // move right
+        //   if (row[row.Length - 1] != '^') {
+        //     for (var i = 0; i < row.Length; i++) {
+        //         if (row[i] == '^') {
+        //             row[i + 1] = '^';
+        //             row[i] = '-';
+        //             break;
+        //         }
+        //     }
+        //   } 
+        //   continue;
+        // }
+
+        Console.WriteLine(row);
+        // Thread.Sleep(500);
+        // SendKeys.Send("{ENTER}");
       } while (Pressed_Key.Key != ConsoleKey.Escape);
     }
 
@@ -29,8 +65,9 @@ public class Game {
       // Move the character differently if THE_PRESSED_KEY is 'S'
       // etc.
 
-      // while(Console.KeyAvailable) Console.ReadKey(true);
+      // while(Console.KeyAvailable) Console.ReadKey(true);      
       if (Pressed_Key.Key == ConsoleKey.A) {
+        // move left
         if (row[0] != '^') {
           for (var i = 0; i < row.Length; i++) {
               if (row[i] == '^') {
@@ -40,7 +77,11 @@ public class Game {
               }
           }
         }
-        // move left
+
+        // ConsoleKeyInfo key = Console.ReadKey(intercept: true);
+        // string newLine = Console.ReadLine();
+        // ConsoleKeyInfo key = Console.ReadKey(true);
+
       }
 
       if (Pressed_Key.Key == ConsoleKey.D) {

@@ -5,7 +5,9 @@ public class Game {
   public void main() {
     // while (key == null); //wait for first key press
     //'█'
-    char[] row = {' ',' ',' ',' ',' ','^',' ',' ',' ',' ',' '};
+    char[] row1 = {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '};
+    char[] row2 = {' ',' ',' ',' ',' ','^',' ',' ',' ',' ',' '};
+    char[] row3 = {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '};
 
     bool gameRunning = true;
 
@@ -14,11 +16,11 @@ public class Game {
         ConsoleKey key = Console.ReadKey(true).Key;
 
         if (key == ConsoleKey.LeftArrow) {
-          if (row[0] != '^') {
-            for (var i = 0; i < row.Length; i++) {
-                if (row[i] == '^') {
-                    row[i - 1] = '^';
-                    row[i] = ' ';
+          if (row2[0] != '^') {
+            for (var i = 0; i < row2.Length; i++) {
+                if (row2[i] == '^') {
+                    row2[i - 1] = '^';
+                    row2[i] = ' ';
                     break;
                 }
             }
@@ -26,11 +28,11 @@ public class Game {
         }
 
         if (key == ConsoleKey.RightArrow) {
-          if (row[row.Length - 1] != '^') {
-            for (var i = 0; i < row.Length; i++) {
-                if (row[i] == '^') {
-                    row[i + 1] = '^';
-                    row[i] = ' ';
+          if (row2[row2.Length - 1] != '^') {
+            for (var i = 0; i < row2.Length; i++) {
+                if (row2[i] == '^') {
+                    row2[i + 1] = '^';
+                    row2[i] = ' ';
                     break;
                 }
             }
@@ -48,8 +50,11 @@ public class Game {
         }
       }
 
-      Console.WriteLine(row);
-      Thread.Sleep(500);
+      Console.WriteLine(row1);
+      Console.WriteLine(row2);
+      Console.WriteLine(row3);
+      // Thread.Sleep(500);
+      Thread.Sleep(100);
       // Redraw the game with the updates
     }
 

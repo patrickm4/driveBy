@@ -44,13 +44,14 @@ public class Game {
   public void main() {
     // while (key == null); //wait for first key press
 
-      ConsoleKey key = Console.ReadKey(true).Key;
     // char[] row = {'-','-','-','-','-','^','-','-','-','-','-'};
     char[] row = {'-','-','^','-','-'};
     bool gameRunning = true;
 
     // while (key != ConsoleKey.Escape) {
     while (gameRunning) {
+      ConsoleKey key = Console.ReadKey(true).Key;
+      // Console.WriteLine("top of while");
     // while (Console.KeyAvailable) {
       // Update the enemies, scenery, HUD etc.
       // Move the character if THE_is 'A'
@@ -95,7 +96,7 @@ public class Game {
 
       // = default(ConsoleKeyInfo);
       Console.WriteLine(row);
-      Thread.Sleep(500);
+      // Thread.Sleep(500);
       // Redraw the game with the updates
     }
   }
